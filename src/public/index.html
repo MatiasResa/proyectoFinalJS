@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas - Tablero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="consigna">
+        <h1>Preguntas y Respuestas</h4>
+        <p><span>Descripción del juego: </span>Se tiene un tablero con un dado, una casilla de entrada, una casilla de salida y 20 casilleros intermedios, cada uno identificado con un número. Cada casillero incluye una pregunta y un conjunto de respuestas posibles con una única respuesta correcta. Gana el jugador que llega primero a la casilla de salida..</p>
+        <button id="btnInicio" class="boton">Iniciar Juego</button> 
+       
+        </header>
+    <div class="contenedor">
+        <form id="formRegistro" onsubmit="startGame(event)">
+            <label for="nombreJugador">Nombre del jugador:</label><br>
+            <input type="text" id="nombreJugador" name="nombreJugador" required><br>
+            <label for="colorJugador">Color de ficha:</label><br>
+            <select id="colorJugador" name="colorJugador" required>
+                <option value="red">Rojo</option>
+                <option value="blue">Azul</option>
+                <option value="green">Verde</option>
+                <option value="yellow">Amarillo</option>
+                <option value="orange"> Naranja</option>
+                <option value="purple"> Violeta</option>
+                <option value="pink"> Rosa</option>
+            </select><br><br>
+            <button type="submit">Iniciar Juego</button>
+        </form>
+
+        <div id="bienvenidaJugador" >
+        </div>
+    </div>
+
+    <!-- Información del jugador que está jugando -->
+    <div id="infoJugadorActual" class="infoJugadorActual">
+        <h3>Mi Información</h3>
+        <p id="nombreJugadorActual">Nombre: </p>
+        <p id="colorJugadorActual">Color: </p>
+    </div>
+
+    <!-- Información del rival -->
+    <div id="infoJugadorRival" class="infoJugadorRival">
+        <h4>Información del Rival</h4>
+        <p id="nombreJugadorRival">Nombre: </p>
+        <p id="colorJugadorRival">Color: </p>
+    </div>
+    
+    <div id="largada" class="cajaSalida">
+        <div id="fichaJugador1" class="ficha"></div>
+         LARGADA
+        <div id="fichaJugador2" class="ficha"></div>
+    </div>
+
+    <div class="contenedor">
+        <div class="tabla">
+            <div class="celda" data-celda-number="1">1</div>
+            <div class="celda" data-celda-number="2">2</div>
+            <div class="celda" data-celda-number="3">3</div>
+            <div class="celda" data-celda-number="4">4</div>
+            <div class="celda" data-celda-number="5">5</div>
+            <div class="celda" data-celda-number="6">6</div>
+            <div class="celda" data-celda-number="7">7</div>
+            <div class="celda" data-celda-number="8">8</div>
+            <div class="celda" data-celda-number="9">9</div>
+            <div class="celda" data-celda-number="10">10</div>
+            <div class="celda" data-celda-number="11">11</div>
+            <div class="celda" data-celda-number="12">12</div>
+            <div class="celda" data-celda-number="13">13</div>
+            <div class="celda" data-celda-number="14">14</div>
+            <div class="celda" data-celda-number="15">15</div>
+            <div class="celda" data-celda-number="16">16</div>
+            <div class="celda" data-celda-number="17">17</div>
+            <div class="celda" data-celda-number="18">18</div>
+            <div class="celda" data-celda-number="19">19</div>
+            <div class="celda" data-celda-number="20">20</div>
+        </div>
+
+        <div id="dado">
+            <div id="dadoFace">
+            </div>
+            <button id="btnDado" class="botonDado">Girar Dado</button>
+            <h3 id="numeroDado"></h3>
+        </div>
+        
+        
+        
+        <div id="pregunta" class="cajaPreguntas">
+            <p id="preguntaTexto"></p>
+            <div id="opciones"></div>
+        </div>
+    </div>
+
+    <button id="btnAbandono" > ABANDONAR PARTIDA </button>
+    <div id="llegada" class="finJuego">FIN DEL JUEGO</div>
+    <div class="turnoJugador" id="turnoJugador">TURNO DEL JUGADOR
+        <h4 id="turnoActual"></h4>
+    </div>
+
+    <script src="/socket.io/socket.io.min.js"></script>
+    <script src="script.js?v=1.0.2"></script>
+</body>
+</html>
+

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/11854.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Open Sans', cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10px;
+    margin-top: 45px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+h1 {
+    font-size: 4rem;
+    -webkit-text-fill-color: yellow;
+    -webkit-text-stroke: 2px rgb(226, 208, 208);
+}
+
+header p {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+header span {
+    color: rgb(15, 255, 15);
+    font-size: 1.5rem;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+label {
+    color: #333;
+}
+
+.cajaSalida, .finJuego, .turnoJugador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    background-color: #9e9897;
+    color: rgb(2, 1, 1);
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.ficha {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 5px 5px; 
+}
+
+/* Estilo para la información del jugador actual */
+.infoJugadorActual {
+    display: none;
+    color: #050505; 
+    border: 2px solid #fbff02; 
+    border-radius: 10px;
+    padding: 2px; 
+    width: 280px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: absolute;
+    top:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.infoJugadorRival {
+    display: none;
+    color: #050505; 
+    border: 2px solid #721C24; 
+    border-radius: 10px;
+    padding: 10px;
+    width: 240px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 50px; 
+    z-index: 10;
+}
+
+.tabla {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+}
+
+.celda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.celda span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: inherit;
+}
+.celda.resaltada {
+    border: 4px solid rgb(5, 5, 2); 
+    font-weight: bold;    
+}
+.cajaPreguntas {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+
+
+#dado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#dadoFace {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 4px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+#dot1 { top: 10px; left: 10px; }
+#dot2 { top: 10px; right: 10px; }
+#dot3 { bottom: 10px; left: 10px; }
+#dot4 { bottom: 10px; right: 10px; }
+#dot5 { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+#dot6 { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+#numeroDado {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: rgb(182, 54, 54);
+}
+
+#btnDado,#btnAbandono{
+    display: none;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.botonDado:hover {
+    background-color: #0b7dda;
+}
+
+@keyframes girarDado {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#dadoFace.girar {
+    animation: girarDado 0.6s ease-in-out;
+}
+
+
+#formRegistro {
+    display: none;
+    text-align: left;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#btnInicio {
+    background-color: #111dbe;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#bienvenidaJugador {
+    display: none; 
+    padding: 20px;
+    color: black;
+    background-color: rgb(72, 182, 8);
+    border-radius: 10px;
+    border: 2px solid #0a0a0a; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+

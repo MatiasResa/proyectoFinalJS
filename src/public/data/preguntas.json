@@ -1,0 +1,102 @@
+[
+    {
+      "pregunta": "¿Cuál es la capital de Australia?",
+      "opciones": ["Sídney", "Melbourne", "Canberra", "Brisbane"],
+      "correcta": "Canberra"
+    },
+    {
+      "pregunta": "¿En qué año ganó Argentina su primer Mundial de fútbol?",
+      "opciones": ["1978", "1986", "1990", "2002"],
+      "correcta": "1978"
+    },
+    {
+      "pregunta": "¿Cuál es el río más largo de América del Sur?",
+      "opciones": ["Amazonas", "Orinoco", "Paraná", "Magdalena"],
+      "correcta": "Amazonas"
+    },
+    {
+      "pregunta": "¿Quién es el autor de 'Don Quijote de la Mancha'?",
+      "opciones": ["Miguel de Cervantes", "Gabriel García Márquez", "Pablo Neruda", "Jorge Luis Borges"],
+      "correcta": "Miguel de Cervantes"
+    },
+    {
+      "pregunta": "¿Cuántos jugadores hay en un equipo de baloncesto?",
+      "opciones": ["5", "6", "7", "8"],
+      "correcta": "5"
+    },
+    {
+      "pregunta": "¿Cuál es el país más grande del mundo?",
+      "opciones": ["China", "Estados Unidos", "Rusia", "Canadá"],
+      "correcta": "Rusia"
+    },
+    {
+      "pregunta": "¿En qué ciudad se encuentra la Torre Eiffel?",
+      "opciones": ["Londres", "Roma", "París", "Madrid"],
+      "correcta": "París"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del estadio del FC Barcelona?",
+      "opciones": ["Santiago Bernabéu", "Camp Nou", "Old Trafford", "San Siro"],
+      "correcta": "Camp Nou"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del protagonista de la saga de videojuegos 'The Legend of Zelda'?",
+      "opciones": ["Zelda", "Link", "Ganondorf", "Epona"],
+      "correcta": "Link"
+    },
+    {
+      "pregunta": "¿En qué año llegó el hombre a la luna?",
+      "opciones": ["1965", "1969", "1972", "1980"],
+      "correcta": "1969"
+    },
+    {
+      "pregunta": "¿Cuál es la moneda oficial de Japón?",
+      "opciones": ["Yuan", "Won", "Yen", "Baht"],
+      "correcta": "Yen"
+    },
+    {
+      "pregunta": "¿Cuál es el deporte nacional de Canadá?",
+      "opciones": ["Hockey sobre hielo", "Lacrosse", "Fútbol", "Béisbol"],
+      "correcta": "Lacrosse"
+    },
+    {
+  "pregunta": "¿En qué continente se encuentra el desierto del Sahara?",
+      "opciones": ["Asia", "América", "África", "Australia"],
+      "correcta": "África"
+    },
+    {
+      "pregunta": "¿Cuál es la montaña más alta del mundo?",
+      "opciones": ["K2", "Kangchenjunga", "Everest", "Makalu"],
+      "correcta": "Everest"
+    },
+    {
+      "pregunta": "¿Cuál es el océano más grande del mundo?",
+      "opciones": ["Atlántico", "Índico", "Pacífico", "Ártico"],
+      "correcta": "Pacífico"
+    },
+    {
+      "pregunta": "¿Qué jugador de fútbol ha ganado más Balones de Oro?",
+      "opciones": ["Lionel Messi", "Cristiano Ronaldo", "Pelé", "Diego Maradona"],
+      "correcta": "Lionel Messi"
+    },
+    {
+      "pregunta": "¿Cuál es el idioma oficial de Brasil?",
+      "opciones": ["Español", "Portugués", "Inglés", "Francés"],
+      "correcta": "Portugués"
+    },
+    {
+      "pregunta": "¿Cuál es el videojuego más vendido de todos los tiempos?",
+      "opciones": ["Minecraft", "Tetris", "Grand Theft Auto V", "Wii Sports"],
+      "correcta": "Minecraft"
+    },
+    {
+      "pregunta": "¿En qué país se encuentra la Gran Muralla?",
+      "opciones": ["Japón", "India", "China", "Corea del Sur"],
+      "correcta": "China"
+    },
+    {
+      "pregunta": "¿Qué instrumento musical tiene teclas blancas y negras?",
+      "opciones": ["Guitarra", "Violín", "Piano", "Flauta"],
+      "correcta": "Piano"
+    }
+  ]

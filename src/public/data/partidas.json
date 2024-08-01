@@ -1,0 +1,33 @@
+{
+  "partidas": [
+    {
+      "id": "partida-1",
+      "jugadores": [
+        {
+          "nombre": "jjjjjj",
+          "color": "red",
+          "socketId": "44o7ejUuNvuXHCi5AAAH",
+          "posicion": 0
+        },
+        {
+          "nombre": "jjjjjj",
+          "color": "blue",
+          "socketId": "i1TKqkZmabwWzKjAAAAF",
+          "posicion": 0
+        }
+      ],
+      "turnoActual": "44o7ejUuNvuXHCi5AAAH",
+      "preguntaActual": null,
+      "hayGanador": false,
+      "valorDado": 0,
+      "fichaJugador1": {
+        "color": "red",
+        "socketId": "44o7ejUuNvuXHCi5AAAH"
+      },
+      "fichaJugador2": {
+        "color": "blue",
+        "socketId": "i1TKqkZmabwWzKjAAAAF"
+      }
+    }
+  ]
+}
